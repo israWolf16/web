@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio de Perros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Refugio de Perros</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#dogs">Perros Disponibles</a></li>
+                <li><a href="manage.html">Administrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bienvenidos al Refugio de Perros</h2>
+        <p>Adopta un amigo peludo y cambia una vida.</p>
+    </section>
+
+    <section id="dogs">
+        <h2>Perros Disponibles</h2>
+        
+        <!-- Formulario de Búsqueda -->
+        <form action="search_dogs.php" method="get">
+            <label for="breed">Raza:</label>
+            <input type="text" id="breed" name="breed">
+            <label for="age">Edad (años):</label>
+            <input type="number" id="age" name="age">
+            <label for="sex">Sexo:</label>
+            <select id="sex" name="sex">
+                <option value="">Cualquiera</option>
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+            </select>
+            <label for="size">Tamaño:</label>
+            <select id="size" name="size">
+                <option value="">Cualquiera</option>
+                <option value="Pequeño">Pequeño</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Grande">Grande</option>
+            </select>
+            <input type="submit" value="Buscar">
+        </form>
+
+        <!-- Lista de Perros Disponibles -->
+        <div id="dog-list">
+            <?php include 'fetch_dogs.php'; ?>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Refugio de Perros</p>
+    </footer>
+</body>
+</html>
