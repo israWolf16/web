@@ -3,14 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #61c56d60;
+    
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.7); /* Verde con 70% de opacidad */;
     color: white;
     padding: 10px 0;
     text-align: center;
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    backdrop-filter: blur(5px); /* Agrega desenfoque para mejor efecto */
+
 }
 
 nav ul {
@@ -32,9 +36,10 @@ nav ul li a {
 section {
     padding: 20px;
     margin: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2) ;
+    backdrop-filter: blur(10px); /* Agrega desenfoque para que se vea mejor */
 }
 
 h1, h2 {
@@ -66,17 +71,27 @@ input[type="text"], input[type="number"], select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    background: transparent; /*fondo transparente*/
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto en color blanco */
+    font-size: 16px;
+    outline: none; /* Elimina el borde azul al hacer clic */
 }
 
 input[type="submit"] {
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 5px; /*bordes redondeados*/
     cursor: pointer;
 }
-
+input[type="submit"]:hover {/*hace mas grandes los botones al pasar el cursor*/
+    background-color: #cc5500;  /* Color más oscuro al pasar el mouse */
+    transform: scale(1.1); 
+}
 input[type="submit"]:hover {
     background-color: #45a049;
 }
@@ -103,4 +118,32 @@ input[type="submit"]:hover {
     max-width: 200px;
     height: auto;
     border-radius: 5px;
+}
+
+.contenedor { /*Clase para el fondo de la pagina principal*/
+    background-image: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50)),
+    url('imagenes/fondoprincipal-1024x683.jpg.webp'); /* Asegúrate de que la imagen está en la carpeta correcta */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contenedor1 { /*Clase para el fondo de la pagina principal*/
+    background-image: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50)),
+    url('imagenes/fondo_administrar.webp'); /* Asegúrate de que la imagen está en la carpeta correcta */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
