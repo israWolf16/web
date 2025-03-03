@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="contenedor1"></div>
+    <div class="contenedor1">
     <header>
         <h1>Administrar Perros</h1>
         <nav>
@@ -26,7 +26,33 @@
             <label for="age">Edad:</label>
             <input type="number" id="age" name="age" required>
             <label for="breed">Raza:</label>
-            <input type="text" id="breed" name="breed" required>
+            <select id= "breed" name="breed">
+                <option value="">Cualquiera</option>
+                <option value="Akita">Akita</option>
+                <option value="Beagle">Beagle</option>
+                <option value="Border Collie">Border Collie</option>
+                <option value="Boxer">Boxer</option>
+                <option value="Bulldog Francés">Bulldog Francés</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Cocker Spaniel">Cocker Spaniel</option>
+                <option value="Dálmata">Dálmata</option>
+                <option value="Doberman">Doberman</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Gran Danés">Gran Danés</option>
+                <option value="Husky Siberiano">Husky Siberiano</option>
+                <option value="Labrador Retriever">Labrador Retriever</option>
+                <option value="Mastín Napolitano">Mastín Napolitano</option>
+                <option value="Pastor Alemán">Pastor Alemán</option>
+                <option value="Pitbull">Pitbull</option>
+                <option value="Pomerania">Pomerania</option>
+                <option value="Poodle">Poodle</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="San Bernardo">San Bernardo</option>
+                <option value="Shih Tzu">Shih Tzu</option>
+                <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+
+            </select>
+            
             <label for="description">Descripción:</label>
             <textarea id="description" name="description" required></textarea>
             <label for="sex">Sexo:</label>
