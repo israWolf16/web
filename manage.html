@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Perros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor1"></div>
+    <header>
+        <h1>Administrar Perros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="manage.html">Administrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="add-dog">
+        <h2>Agregar Perro</h2>
+        <form action="add_dog.php" method="post" enctype="multipart/form-data">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="breed">Raza:</label>
+            <input type="text" id="breed" name="breed" required>
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="sex">Sexo:</label>
+            <select id="sex" name="sex" required>
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+            </select>
+            <label for="size">Tamaño:</label>
+            <select id="size" name="size" required>
+                <option value="Pequeño">Pequeño</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Grande">Grande</option>
+            </select>
+            <label for="image">Imagen:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <input type="submit" value="Agregar">
+        </form>
+    </section>
+
+    <section id="delete-dog">
+        <h2>Eliminar Perro</h2>
+        <form action="delete_dog.php" method="post">
+            <label for="id">ID del Perro:</label>
+            <input type="number" id="id" name="id" required>
+            <input type="submit" value="Eliminar">
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Refugio de Perros</p>
+    </footer>
+</body>
+</html>

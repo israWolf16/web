@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #61c56d60;
+    
+}
+
+header {
+    background-color: rgba(76, 175, 80, 1); /* Verde con 70% de opacidad */;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    backdrop-filter: blur(5px); /* Agrega desenfoque para mejor efecto */
+    width: 100% ; /*Esto hace que se extienda al 100 % la barra*/
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2) ;
+    backdrop-filter: blur(10px); /* Agrega desenfoque para que se vea mejor */
+}
+p /*Funcion que cambia el color de las letras*/
+{
+    color: #ffffff;
+}
+h1, h2 {
+    color: #ffffff;
+}
+
+
+label /*Color de encabezado*/
+{
+    color: #ffffff;
+}
+
+
+option
+{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para el formulario de búsqueda */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background: transparent; /*fondo transparente*/
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto en color blanco */
+    font-size: 16px;
+    outline: none; /* Elimina el borde azul al hacer clic */
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px; /*bordes redondeados*/
+    cursor: pointer;
+}
+input[type="submit"]:hover {/*hace mas grandes los botones al pasar el cursor*/
+    background-color: #cc5500;  /* Color más oscuro al pasar el mouse */
+    transform: scale(1.1); 
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la lista de perros */
+.dog {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.dog h3 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+.dog p {
+    margin: 5px 0;
+}
+
+.dog img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contenedor { /*Clase para el fondo de la pagina principal*/
+    background-image: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50)),
+    url('imagenes/fondoprincipal-1024x683.jpg.webp'); /* Asegúrate de que la imagen está en la carpeta correcta */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contenedor1 { /*Clase para el fondo de la pagina principal*/
+    background-image: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50)),
+    url('imagenes/fondo_administrar.webp'); /* Asegúrate de que la imagen está en la carpeta correcta */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

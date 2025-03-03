@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETFINDER-REFUGIO CANINO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+    <header>
+        <h1>PETFINDER.</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="dogs.html">Perros Disponibles</a></li>
+                <li><a href="manage.html">Administrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>BIENVENIDOS A PETFINDER.</h2>
+        <p>¡Adopta un amigo peludo y cambia una vida!</p>
+    </section>
+
+    <section id="dogs">
+        <h2>Perros Disponibles</h2>
+        
+        <!-- Formulario de Búsqueda -->
+        <form action="search_dogs.php" method="get">
+            <label for="breed">Raza:</label>
+            <select id= "breed" name="breed">
+                <option value="">Cualquiera</option>
+                <option value="Akita">Akita</option>
+                <option value="Beagle">Beagle</option>
+                <option value="Border Collie">Border Collie</option>
+                <option value="Boxer">Boxer</option>
+                <option value="Bulldog Francés">Bulldog Francés</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Cocker Spaniel">Cocker Spaniel</option>
+                <option value="Dálmata">Dálmata</option>
+                <option value="Doberman">Doberman</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Gran Danés">Gran Danés</option>
+                <option value="Husky Siberiano">Husky Siberiano</option>
+                <option value="Labrador Retriever">Labrador Retriever</option>
+                <option value="Mastín Napolitano">Mastín Napolitano</option>
+                <option value="Pastor Alemán">Pastor Alemán</option>
+                <option value="Pitbull">Pitbull</option>
+                <option value="Pomerania">Pomerania</option>
+                <option value="Poodle">Poodle</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="San Bernardo">San Bernardo</option>
+                <option value="Shih Tzu">Shih Tzu</option>
+                <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+
+            </select>
+            
+            <label for="age">Edad (años):</label>
+            <input type="number" id="age" name="age">
+            <label for="sex">Sexo:</label>
+            <select id="sex" name="sex">
+                <option value="">Cualquiera</option>
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+            </select>
+            <label for="size">Tamaño:</label>
+            <select id="size" name="size">
+                <option value="">Cualquiera</option>
+                <option value="Pequeño">Pequeño</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Grande">Grande</option>
+            </select>
+            <input type="submit" value="Buscar">
+        </form>
+
+        <!-- Lista de Perros Disponibles -->
+        <div id="dog-list">
+            <?php include 'fetch_dogs.php'; ?>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PETFINDER S.A de C.V</p>
+    </footer>
+</body>
+</html>
+<!--edicion-->
